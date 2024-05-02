@@ -24,7 +24,7 @@
   }
 
   .btn {
-    @apply rounded-full px-7 py-[11px] text-center font-semibold capitalize;
+    @apply rounded-full px-5 py-[9px] text-center font-semibold capitalize;
   }
 
   .btn-primary {
@@ -42,11 +42,11 @@
   }
 
   .nav-link {
-    @apply flex items-center gap-2 py-2 pl-3;
+    @apply flex items-center gap-2 py-1 pl-3;
   }
 
   .nav-link:hover {
-    @apply rounded-e-xl bg-gray-50 bg-opacity-30 text-cod-gray-200 brightness-0 invert;
+    @apply rounded-e-xl bg-fountain-blue-300 bg-opacity-30 text-white;
   }
 
   .nav-link img {
@@ -90,6 +90,7 @@
 
 ::-webkit-scrollbar-track {
   background: transparent !important;
+  margin-top: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
