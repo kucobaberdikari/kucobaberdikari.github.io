@@ -22,10 +22,10 @@
   <body>
     <!-- Sidebar -->
     <aside
-      class="fixed z-[999] hidden h-full w-full overflow-y-auto bg-cod-gray-900 text-gray-50 lg:block lg:max-w-[250px]"
+      class="fixed left-3 z-[999] my-2 hidden min-h-fit w-full overflow-y-auto rounded-3xl bg-white text-cod-gray-950 lg:block lg:max-w-[230px]"
       id="sidebarHRIS"
     >
-      <div class="flex flex-col gap-y-[30px] px-2 py-[30px]">
+      <div class="flex flex-col flex-wrap gap-y-4 px-2 pb-2 pt-5">
         <div class="-mt-3 flex items-center justify-between">
           <a href="index.html" class="flex justify-center">
             <img src="../assets/svgs/logo-type.svg" alt="" />
@@ -47,9 +47,9 @@
             </svg>
           </a>
         </div>
-        <div class="flex flex-col gap-2">
-          <div class="text-sm text-gray-100">Master</div>
-          <a href="index.html" class="nav-link active" title="Kategori">
+        <div class="flex flex-col gap-1.5">
+          <div class="text-sm text-gray-950">Master</div>
+          <a href="kategori.html" class="nav-link active" title="Kategori">
             <img src="../assets/svgs/ic-box.svg" alt="" />
             <span>Kategori</span>
           </a>
@@ -66,8 +66,8 @@
             <span>Supplier</span>
           </a>
         </div>
-        <div class="flex flex-col gap-2">
-          <div class="text-sm text-gray-100">Transaksi</div>
+        <div class="flex flex-col gap-1.5">
+          <div class="text-sm text-gray-950">Transaksi</div>
           <a href="pengeluaran.html" class="nav-link" title="Pengeluaran">
             <img src="../assets/svgs/coins.svg" alt="" class="h-full w-6" />
             <span>Pengeluaran</span>
@@ -105,8 +105,8 @@
             <span>Transaksi Baru</span>
           </a>
         </div>
-        <div class="flex flex-col gap-2">
-          <div class="text-sm text-gray-100">Report</div>
+        <div class="flex flex-col gap-1.5">
+          <div class="text-sm text-gray-950">Report</div>
           <a href="#" class="nav-link" title="Laporan">
             <img
               src="../assets/svgs/file-excel.svg"
@@ -115,17 +115,17 @@
             />
             <span>Laporan</span>
           </a>
+          <a href="#" class="nav-link" title="Pengaturan">
+            <img src="../assets/svgs/ic-settings.svg" alt="" />
+            <span>Pengaturan</span>
+          </a>
         </div>
-      </div>
-      <div class="bottom-0 -mt-3 flex flex-col px-2">
-        <a href="#" class="nav-link" title="Pengaturan">
-          <img src="../assets/svgs/ic-settings.svg" alt="" />
-          <span>Pengaturan</span>
-        </a>
       </div>
     </aside>
     <!-- Main Content -->
-    <main class="px-3 py-[10px] lg:ml-[10px] lg:px-4 xl:ml-[255px]">
+    <main
+      class="rounded-full px-3 py-[10px] lg:ml-[10px] lg:px-4 xl:ml-[245px]"
+    >
       <!-- Navbar Section -->
       <nav
         class="flex flex-col flex-wrap justify-between gap-3 md:flex-row md:items-center lg:gap-4"
@@ -148,49 +148,8 @@
             </svg>
           </a>
           <!-- title is here -->
-          <div class="">
-            <p class="text-2xl font-semibold text-cod-gray-900">Kategori</p>
-            <div class="flex items-center gap-4 lg:block">
-              <ul class="inline-flex items-center space-x-1">
-                <li>
-                  <div class="flex items-center text-fountain-blue-500">
-                    <svg
-                      class="me-1 h-[10px] w-[10px]"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
-                      />
-                    </svg>
-                  </div>
-                </li>
-                <li aria-current="page">
-                  <div class="flex items-center">
-                    <svg
-                      class="mx-1 h-[10px] w-[10px] text-cod-gray-600 rtl:rotate-180"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 6 10"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="m1 9 4-4-4-4"
-                      />
-                    </svg>
-                    <span class="ms-1 text-xs font-medium text-cod-gray-900"
-                      >Kategori</span
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <div class="text-[32px] font-semibold text-congress-blue-500">
+            Kategori
           </div>
         </div>
         <div class="flex items-center gap-4">

@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerHuman HRIS - Kategori</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/svgs/logo-mark.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside
+      class="fixed z-[999] hidden h-full w-full overflow-y-auto bg-cod-gray-900 text-gray-50 lg:block lg:max-w-[250px]"
+      id="sidebarHRIS"
+    >
+      <div class="flex flex-col gap-y-[30px] px-2 py-[30px]">
+        <div class="-mt-3 flex items-center justify-between">
+          <a href="index.html" class="flex justify-center">
+            <img src="../assets/svgs/logo-type.svg" alt="" />
+          </a>
+          <a href="#" id="toggleCloseSidebar" class="lg:hidden">
+            <svg
+              class="h-6 w-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="text-sm text-gray-100">Master</div>
+          <a href="index.html" class="nav-link" title="Kategori">
+            <img src="../assets/svgs/ic-box.svg" alt="" />
+            <span>Kategori</span>
+          </a>
+          <a href="produk.html" class="nav-link active" title="Produk">
+            <img src="../assets/svgs/box stacked.svg" alt="" />
+            <span>Produk</span>
+          </a>
+          <a href="member.html" class="nav-link" title="Member">
+            <img src="../assets/svgs/ic-users.svg" alt="" />
+            <span>Member</span>
+          </a>
+          <a href="supplier.html" class="nav-link" title="Supplier">
+            <img src="../assets/svgs/user-tag.svg" alt="" />
+            <span>Supplier</span>
+          </a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="text-sm text-gray-100">Transaksi</div>
+          <a href="pengeluaran.html" class="nav-link" title="Pengeluaran">
+            <img src="../assets/svgs/coins.svg" alt="" class="h-full w-6" />
+            <span>Pengeluaran</span>
+          </a>
+          <a href="pembelian.html" class="nav-link" title="Pembelian">
+            <img
+              src="../assets/svgs/file-export.svg"
+              alt=""
+              class="h-full w-6"
+            />
+            <span>Pembelian</span>
+          </a>
+          <a href="penjualan.html" class="nav-link" title="Penjualan">
+            <img
+              src="../assets/svgs/file-import.svg"
+              alt=""
+              class="h-full w-6"
+            />
+            <span>Penjualan</span>
+          </a>
+          <a
+            href="transaksi_aktif.html"
+            class="nav-link"
+            title="Transaksi Aktif"
+          >
+            <img
+              src="../assets/svgs/cart-arrow-down.svg"
+              alt=""
+              class="h-full w-6"
+            />
+            <span>Transaksi Aktif</span>
+          </a>
+          <a href="transaksi_baru.html" class="nav-link" title="Transaksi Baru">
+            <img src="../assets/svgs/cart-plus.svg" alt="" class="h-full w-6" />
+            <span>Transaksi Baru</span>
+          </a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="text-sm text-gray-100">Report</div>
+          <a href="#" class="nav-link" title="Laporan">
+            <img
+              src="../assets/svgs/file-excel.svg"
+              alt=""
+              class="h-auto w-5"
+            />
+            <span>Laporan</span>
+          </a>
+        </div>
+      </div>
+      <div class="bottom-0 -mt-3 flex flex-col px-2">
+        <a href="#" class="nav-link" title="Pengaturan">
+          <img src="../assets/svgs/ic-settings.svg" alt="" />
+          <span>Pengaturan</span>
+        </a>
+      </div>
+    </aside>
+    <!-- Main Content -->
+    <main class="px-3 py-[10px] lg:ml-[10px] lg:px-4 xl:ml-[255px]">
+      <!-- Navbar Section -->
+      <nav
+        class="flex flex-col flex-wrap justify-between gap-3 md:flex-row md:items-center lg:gap-4"
+      >
+        <div class="flex items-center justify-between gap-4">
+          <a href="#" id="toggleOpenSidebar" class="lg:hidden">
+            <svg
+              class="h-6 w-6 text-dark"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              ></path>
+            </svg>
+          </a>
+          <!-- title is here -->
+          <div class="">
+            <p class="text-2xl font-semibold text-cod-gray-900">Produk</p>
+            <div class="flex items-center gap-4 lg:block">
+              <ul class="inline-flex items-center space-x-1">
+                <li>
+                  <div class="flex items-center text-fountain-blue-500">
+                    <svg
+                      class="me-1 h-[10px] w-[10px]"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+                      />
+                    </svg>
+                  </div>
+                </li>
+                <li aria-current="page">
+                  <div class="flex items-center">
+                    <svg
+                      class="mx-1 h-[10px] w-[10px] text-cod-gray-600 rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 9 4-4-4-4"
+                      />
+                    </svg>
+                    <span class="ms-1 text-xs font-medium text-cod-gray-900"
+                      >Produk</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <form class="w-full shrink md:w-[516px]">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="input-field form-icon-search w-full !border-none italic !outline-none ring-congress-blue-200 transition-all duration-300 focus:ring-2"
+              placeholder="Search people, user-f, project"
+            />
+          </form>
+          <a
+            href="#"
+            class="notification-dot relative h-[46px] w-[46px] flex-none rounded-full bg-white p-[11px]"
+          >
+            <img src="../assets/svgs/ic-bell.svg" alt="" />
+          </a>
+          <ul>
+            <li class="relative flex items-center pr-2">
+              <p class="transform-dropdown-show hidden"></p>
+              <a
+                href="javascript:;"
+                class="relative block h-[46px] w-[46px] flex-none rounded-full bg-white p-1 text-sm text-gray-950 transition-all"
+                dropdown-trigger
+                aria-expanded="false"
+              >
+                <img src="../assets/images/user-f-1.png" alt="" />
+              </a>
+
+              <ul
+                dropdown-menu
+                class="before:leading-default before:duration-350 before:ease lg:shadow-3xl duration-250 before:text-5.5 pointer-events-none absolute right-0 top-11 z-50 hidden min-w-44 origin-top list-none rounded-lg border-0 border-solid border-transparent bg-white bg-clip-padding px-2 py-4 text-left text-sm text-slate-500 opacity-0 transition-all before:absolute before:left-auto before:right-0 before:top-0 before:z-50 before:inline-block before:antialiased before:transition-all sm:-mr-6 before:sm:right-8 lg:absolute lg:left-auto lg:right-4 lg:mt-2 lg:block lg:cursor-pointer"
+              >
+                <!-- add show class on dropdown open js -->
+                <li class="relative mb-2">
+                  <a
+                    class="ease py-1.2 clear-both block w-full whitespace-nowrap rounded-lg px-4 duration-300 hover:bg-gray-200 hover:text-slate-700 lg:transition-colors"
+                    href="javascript:;"
+                  >
+                    <div class="flex py-1">
+                      <div class="my-auto">
+                        <img
+                          src="../assets/images/user-f-2.png"
+                          class="mr-4 inline-flex h-9 w-9 max-w-none items-center justify-center rounded-xl text-sm text-white"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <h6
+                          class="-white mb-1 text-sm font-normal leading-normal"
+                        >
+                          <span class="font-semibold">New message</span> from
+                          Laur
+                        </h6>
+                        <p
+                          class="-white/80 mb-0 text-xs leading-tight text-slate-400"
+                        >
+                          <i class="fa fa-clock mr-1"></i>
+                          13 minutes ago
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="relative mb-2">
+                  <a
+                    class="ease py-1.2 clear-both block w-full whitespace-nowrap rounded-lg px-4 transition-colors duration-300 hover:bg-gray-200 hover:text-slate-700"
+                    href="javascript:;"
+                  >
+                    <div class="flex py-1">
+                      <div class="my-auto">
+                        <img
+                          src="../assets/images/small-logos/logo-spotify.svg"
+                          class="mr-4 inline-flex h-9 w-9 max-w-none items-center justify-center rounded-xl bg-gradient-to-tl from-zinc-800 to-zinc-700 text-sm text-white dark:bg-gradient-to-tl"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <h6
+                          class="-white mb-1 text-sm font-normal leading-normal"
+                        >
+                          <span class="font-semibold">New album</span> by Travis
+                          Scott
+                        </h6>
+                        <p
+                          class="-white/80 mb-0 text-xs leading-tight text-slate-400"
+                        >
+                          <i class="fa fa-clock mr-1"></i>
+                          1 day
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="relative">
+                  <a
+                    class="ease py-1.2 clear-both block w-full whitespace-nowrap rounded-lg px-4 transition-colors duration-300 hover:bg-gray-200 hover:text-slate-700"
+                    href="javascript:;"
+                  >
+                    <div class="flex py-1">
+                      <div
+                        class="ease-nav-brand my-auto mr-4 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tl from-slate-600 to-slate-300 text-sm text-white transition-all duration-200"
+                      >
+                        <svg
+                          width="12px"
+                          height="12px"
+                          viewBox="0 0 43 36"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <title>credit-card</title>
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <g
+                              transform="translate(-2169.000000, -745.000000)"
+                              fill="#FFFFFF"
+                              fill-rule="nonzero"
+                            >
+                              <g transform="translate(1716.000000, 291.000000)">
+                                <g
+                                  transform="translate(453.000000, 454.000000)"
+                                >
+                                  <path
+                                    class="color-background"
+                                    d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z"
+                                    opacity="0.593633743"
+                                  ></path>
+                                  <path
+                                    class="color-background"
+                                    d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z"
+                                  ></path>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <h6
+                          class="-white mb-1 text-sm font-normal leading-normal"
+                        >
+                          Payment successfully completed
+                        </h6>
+                        <p
+                          class="-white/80 mb-0 text-xs leading-tight text-slate-400"
+                        >
+                          <i class="fa fa-clock mr-1"></i>
+                          2 days
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </main>
+  </body>
+</html>
