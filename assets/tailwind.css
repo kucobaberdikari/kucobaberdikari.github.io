@@ -24,7 +24,7 @@
   }
 
   .input-field {
-    @apply rounded-[100px] px-6 py-[11px] text-dark outline outline-[1.4px] outline-dark  placeholder:text-grey focus:outline-primary;
+    @apply rounded-[100px] px-6 py-2 text-dark outline outline-[1.4px] outline-dark  placeholder:text-grey focus:outline-primary;
   }
 
   .btn {
@@ -32,11 +32,39 @@
   }
 
   .btn-primary {
-    @apply bg-congress-blue-500 text-white;
+    @apply bg-congress-blue-800 text-white;
   }
 
   .btn-primary:hover {
-    @apply bg-congress-blue-800 text-white;
+    @apply bg-congress-blue-500 text-white;
+  }
+
+  .card-project {
+    transition:
+      all 0.3s ease 0s,
+      opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 1ms;
+    max-height: 300px;
+    overflow: hidden;
+    @apply rounded-[20px] border border-cod-gray-300 bg-white p-3;
+  }
+  .card-project .button-cta {
+    opacity: 0;
+    transition: all 300ms ease;
+  }
+  .card-project:hover {
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+  }
+  .card-project:hover .button-cta {
+    opacity: 1;
+    transition: all 300ms ease;
+  }
+  .card-project:hover .init-price,
+  .card-project:hover .progress-info {
+    opacity: 0;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    transition: all 300ms ease;
   }
 }
 
