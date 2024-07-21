@@ -83,11 +83,11 @@
   }
 
   .nav-link {
-    @apply flex items-center gap-2 py-1 pl-3 font-plusjakarta;
+    @apply box-border flex items-center gap-2 py-1 pl-3 font-plusjakarta;
   }
 
   .nav-link:hover {
-    @apply rounded-xl bg-fountain-blue-300 bg-opacity-30 !text-dark;
+    @apply rounded-r-xl bg-fountain-blue-300 bg-opacity-30 !text-dark;
   }
 
   .nav-link img {
