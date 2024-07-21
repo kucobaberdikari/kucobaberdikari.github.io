@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     fontFamily: {
       poppins: "Poppins, sans-serif",
+      plusjakarta: "Plus Jakarta Sans, sans-serif",
     },
+
     extend: {
       colors: {
         primary: "#4640DE",
@@ -66,6 +68,12 @@ module.exports = {
           900: "#3d3d3d",
           950: "#0f0f0f" /**key color */,
         },
+      },
+      screens: {
+        "max-mobile": { max: "450px" },
+        // => media mobile screen with max width 450px
+        "max-sm": { max: "640px" },
+        // => media mobile screen with max width 640px
       },
     },
   },

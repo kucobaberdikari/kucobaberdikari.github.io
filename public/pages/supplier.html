@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PowerHuman HRIS - Dashboard</title>
+    <title>PowerHuman HRIS - Kategori</title>
     <link rel="stylesheet" href="../css/main.css" />
     <link
       rel="shortcut icon"
@@ -22,7 +22,7 @@
   <body>
     <!-- Sidebar -->
     <aside
-      class="fixed left-3 z-[999] my-2 hidden min-h-screen w-full overflow-y-auto rounded-3xl bg-white text-cod-gray-950 lg:block lg:max-w-[230px]"
+      class="fixed left-3 z-[999] my-2 hidden min-h-fit w-full overflow-y-auto rounded-3xl bg-white text-cod-gray-950 lg:block lg:max-w-[230px]"
       id="sidebarHRIS"
     >
       <div class="flex flex-col flex-wrap gap-y-4 px-2 pb-2 pt-5">
@@ -57,11 +57,11 @@
             <img src="../assets/svgs/box stacked.svg" alt="" />
             <span>Produk</span>
           </a>
-          <a href="member.html" class="nav-link active" title="Member">
+          <a href="member.html" class="nav-link" title="Member">
             <img src="../assets/svgs/ic-users.svg" alt="" />
             <span>Member</span>
           </a>
-          <a href="supplier.html" class="nav-link" title="Supplier">
+          <a href="supplier.html" class="nav-link active" title="Supplier">
             <img src="../assets/svgs/user-tag.svg" alt="" />
             <span>Supplier</span>
           </a>
@@ -126,7 +126,7 @@
     <main
       class="rounded-full px-3 py-[10px] lg:ml-[10px] lg:px-4 xl:ml-[245px]"
     >
-      <!-- Top Section -->
+      <!-- Navbar Section -->
       <nav
         class="flex flex-wrap justify-between gap-3 md:flex-row md:items-center lg:gap-4"
       >
@@ -149,7 +149,7 @@
           </a>
           <!-- title is here -->
           <div class="text-[32px] font-semibold text-congress-blue-500">
-            Member
+            Supplier
           </div>
         </div>
         <div class="flex items-center gap-4">
@@ -162,6 +162,12 @@
               placeholder="Search people, user-f, project"
             />
           </form>
+          <!-- <a
+            href="#"
+            class="notification-dot relative h-[46px] w-[46px] flex-none rounded-full bg-white p-[11px]"
+          >
+            <img src="../assets/svgs/ic-bell.svg" alt="" />
+          </a> -->
           <ul>
             <li class="relative flex items-center pr-2">
               <p class="transform-dropdown-show hidden"></p>
@@ -308,20 +314,14 @@
         </div>
       </nav>
 
-      <section class="mt-5">
+      <section class="pt-5">
         <div class="card min-h-full min-w-full">
-          <div class="flex justify-start gap-x-4">
+          <div class="flex justify-start">
             <button
               class="btn flex items-center gap-x-2 bg-saffron-mango-500 text-gray-50"
             >
-              <i class="fa fa-plus-circle"></i>
+              <i class="fa fa-plus-circle fa-lg"></i>
               Tambah Data
-            </button>
-            <button
-              class="btn flex items-center gap-x-2 bg-congress-blue-500 text-gray-50"
-            >
-              <i class="fas fa-id-card"></i>
-              Cetak Member
             </button>
           </div>
           <div class="flex-auto px-0 pb-2 pt-0">
@@ -339,28 +339,26 @@
                     <th
                       class="text-xxs border-b-solid tracking-none border-collapse whitespace-nowrap border-b border-white/40 px-6 py-3 text-left align-middle font-bold uppercase text-cod-gray-800 shadow-none"
                     >
-                      Kode Member
+                      Author
                     </th>
                     <th
                       class="text-xxs border-b-solid tracking-none border-collapse whitespace-nowrap border-b border-white/40 px-6 py-3 pl-2 text-left align-middle font-bold uppercase text-cod-gray-800 shadow-none"
                     >
-                      Nama
+                      Function
                     </th>
                     <th
                       class="text-xxs border-b-solid tracking-none border-collapse whitespace-nowrap border-b border-white/40 px-6 py-3 text-center align-middle font-bold uppercase text-cod-gray-800 shadow-none"
                     >
-                      No Telepon
+                      Status
                     </th>
                     <th
                       class="text-xxs border-b-solid tracking-none border-collapse whitespace-nowrap border-b border-white/40 px-6 py-3 text-center align-middle font-bold uppercase text-cod-gray-800 shadow-none"
                     >
-                      Alamat
+                      Employed
                     </th>
                     <th
-                      class="border-collapse items-start whitespace-nowrap border-b border-solid border-white/40 py-3 align-middle font-semibold capitalize text-cod-gray-800 shadow-none"
-                    >
-                      <i class="fas fa-cog"></i>
-                    </th>
+                      class="tracking-none border-collapse whitespace-nowrap border-b border-solid border-white/40 px-6 py-3 align-middle font-semibold capitalize text-cod-gray-800 shadow-none"
+                    ></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -377,11 +375,25 @@
                       class="whitespace-nowrap border-b border-white/40 p-2 align-middle shadow-transparent"
                     >
                       <div class="flex px-2 py-1">
-                        <p
-                          class="mb-0 text-sm leading-normal text-cod-gray-900"
-                        >
-                          John Michael
-                        </p>
+                        <div>
+                          <img
+                            src="../assets/images/user-f-2.png"
+                            class="mr-4 inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm text-cod-gray-900 transition-all duration-200 ease-in-out"
+                            alt="user1"
+                          />
+                        </div>
+                        <div class="flex flex-col justify-center">
+                          <h6
+                            class="mb-0 text-sm leading-normal text-cod-gray-900"
+                          >
+                            John Michael
+                          </h6>
+                          <p
+                            class="mb-0 text-xs leading-tight text-cod-gray-900 opacity-80"
+                          >
+                            john@creative-tim.com
+                          </p>
+                        </div>
                       </div>
                     </td>
                     <td
@@ -391,6 +403,11 @@
                         class="mb-0 text-xs font-semibold leading-tight text-cod-gray-900 opacity-80"
                       >
                         Manager
+                      </p>
+                      <p
+                        class="mb-0 text-xs leading-tight text-cod-gray-900 opacity-80"
+                      >
+                        Organization
                       </p>
                     </td>
                     <td
@@ -420,7 +437,7 @@
                       </a>
                     </td>
                   </tr>
-                  <tr class="border-b-2">
+                  <tr>
                     <td
                       class="w-[5%] whitespace-nowrap border-b border-white/40 p-2 text-center align-middle shadow-transparent"
                     >
@@ -433,11 +450,25 @@
                       class="whitespace-nowrap border-b border-white/40 p-2 align-middle shadow-transparent"
                     >
                       <div class="flex px-2 py-1">
-                        <p
-                          class="mb-0 text-sm leading-normal text-cod-gray-900"
-                        >
-                          Alexa Liras
-                        </p>
+                        <div>
+                          <img
+                            src="../assets/images/user-f-3.png"
+                            class="mr-4 inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm text-white transition-all duration-200 ease-in-out"
+                            alt="user2"
+                          />
+                        </div>
+                        <div class="flex flex-col justify-center">
+                          <h6
+                            class="mb-0 text-sm leading-normal text-cod-gray-900"
+                          >
+                            Alexa Liras
+                          </h6>
+                          <p
+                            class="mb-0 text-xs leading-tight text-cod-gray-900 opacity-80"
+                          >
+                            alexa@creative-tim.com
+                          </p>
+                        </div>
                       </div>
                     </td>
                     <td
@@ -447,6 +478,11 @@
                         class="mb-0 text-xs font-semibold leading-tight text-cod-gray-900 opacity-80"
                       >
                         Programator
+                      </p>
+                      <p
+                        class="mb-0 text-xs leading-tight text-cod-gray-900 opacity-80"
+                      >
+                        Developer
                       </p>
                     </td>
                     <td
@@ -476,7 +512,7 @@
                       </a>
                     </td>
                   </tr>
-                  <tr class="border-b-2">
+                  <tr>
                     <td
                       class="w-[5%] whitespace-nowrap border-b border-white/40 p-2 text-center align-middle shadow-transparent"
                     >
@@ -489,11 +525,25 @@
                       class="whitespace-nowrap border-b border-white/40 p-2 align-middle shadow-transparent"
                     >
                       <div class="flex px-2 py-1">
-                        <p
-                          class="mb-0 text-sm leading-normal text-cod-gray-900"
-                        >
-                          Laurent Perrier
-                        </p>
+                        <div>
+                          <img
+                            src="../assets/images/user-f-4.png"
+                            class="mr-4 inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm text-cod-gray-900 transition-all duration-200 ease-in-out"
+                            alt="user3"
+                          />
+                        </div>
+                        <div class="flex flex-col justify-center">
+                          <h6
+                            class="mb-0 text-sm leading-normal text-cod-gray-900"
+                          >
+                            Laurent Perrier
+                          </h6>
+                          <p
+                            class="mb-0 text-xs leading-tight text-cod-gray-900 opacity-80"
+                          >
+                            laurent@creative-tim.com
+                          </p>
+                        </div>
                       </div>
                     </td>
                     <td
@@ -502,7 +552,12 @@
                       <p
                         class="text-cod-gray-900opacity-80 mb-0 text-xs font-semibold leading-tight"
                       >
-                        Executive Projects
+                        Executive
+                      </p>
+                      <p
+                        class="mb-0 text-xs leading-tight text-cod-gray-900 opacity-80"
+                      >
+                        Projects
                       </p>
                     </td>
                     <td
@@ -532,7 +587,7 @@
                       </a>
                     </td>
                   </tr>
-                  <tr class="border-b-2">
+                  <tr>
                     <td
                       class="w-[5%] whitespace-nowrap border-b border-white/40 p-2 text-center align-middle shadow-transparent"
                     >
@@ -607,7 +662,7 @@
                       </a>
                     </td>
                   </tr>
-                  <tr class="border-b-2">
+                  <tr>
                     <td
                       class="w-[5%] whitespace-nowrap border-b border-white/40 p-2 text-center align-middle shadow-transparent"
                     >
@@ -682,7 +737,7 @@
                       </a>
                     </td>
                   </tr>
-                  <tr class="border-b-2">
+                  <tr>
                     <td
                       class="w-[5%] whitespace-nowrap border-b border-white/40 p-2 text-center align-middle shadow-transparent"
                     >
