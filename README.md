@@ -2,4 +2,6 @@
 <code>npm install</code>
 <p class="text-lg">then run</p>
 <code>npm run watch </code>
-<p>to install and running tailwind css</p>
+<p>to install and running tailwind css</p>c
+
+<code>link: https://kucobaberdikari.github.io/public/pages/index.html </code>
